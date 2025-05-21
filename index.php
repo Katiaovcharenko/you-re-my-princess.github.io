@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're My Princess - Салон красоты</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="service.php">Услуги</a></li>
+                <li><a href="info.php">О нас</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="view-appointments.php">Мои записи</a></li>
+                <li><a href="profile.php">Профиль</a></li>
+                <li><a href="index.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="left-content">
+            <!-- Герой-секция -->
+            <section class="hero">
+                <h2>Добро пожаловать в салон красоты You're My Princess</h2>
+                <p>Мы предлагаем исключительные услуги по уходу за красотой, подчеркивая индивидуальность каждого клиента. Наша команда профессионалов использует лучшие косметические средства и новейшие технологии для предоставления первоклассного сервиса и комфорта.</p>
+            </section>
+            <!-- Секция "Наши услуги" -->
+            <section class="services-container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="photo-gallery">
+                    <!-- Карточка услуги 1 -->
+                    <div class="service-card">
+                        <img src="kras.png" alt="Уход за волосами" class="service-img">
+                        <div class="service-content">
+                            <h3>Уход за волосами</h3>
+                            <p>Профессиональные стрижки, окрашивание, лечение и укладка от наших мастеров</p>
+                            <a href="service.html" class="service-btn">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Карточка услуги 2 -->
+                    <div class="service-card">
+                        <img src="makeup.jpg" alt="Макияж" class="service-img">
+                        <div class="service-content">
+                            <h3>Макияж</h3>
+                            <p>Дневной, вечерний, свадебный макияж от профессиональных визажистов</p>
+                            <a href="service.html" class="service-btn">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Карточка услуги 3 -->
+                    <div class="service-card">
+                        <img src="face.png" alt="Уход за лицом" class="service-img">
+                        <div class="service-content">
+                            <h3>Уход за лицом</h3>
+                            <p>Омолаживающие процедуры, чистки и уход за кожей лица</p>
+                            <a href="service.html" class="service-btn">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="epil.jpg" alt="Уход за лицом" class="service-img">
+                        <div class="service-content">
+                            <h3>Эпиляция</h3>
+                            <p>Восковая и лазерная эпиляция для гладкой и шелковистой кожи</p>
+                            <a href="service.html" class="service-btn">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="kurs-manic.jpg" alt="Маникюр и педикюр" class="service-img">
+                        <div class="service-content">
+                            <h3>Маникюр и педикюр</h3>
+                            <p>Маникюр, педикюр, дизайн ногтей, покрытие гель-лаком</p>
+                            <a href="service.html" class="service-btn">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="brovi.png" alt="Уход за лицом" class="service-img">
+                        <div class="service-content">
+                            <h3>Другие услуги</h3>
+                            <p>Ламинирование ресниц, татуаж, услуги косметолога</p>
+                            <a href="service.html" class="service-btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция "Новости" и "Блог" -->
+            <section class="news-blog-container">
+                <!-- Блок новостей -->
+                <div class="news-section">
+                    <h2 class="section-title">Новости</h2>
+                    
+                    <div class="news-item">
+                        <span class="news-date">15 июня 2023</span>
+                        <h3>Новая линейка косметики</h3>
+                        <p>Мы рады представить новую экологическую линейку косметики для ухода за кожей от ведущих мировых брендов.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="news-item">
+                        <span class="news-date">2 июня 2023</span>
+                        <h3>Акция летнего сезона</h3>
+                        <p>Специальное предложение на все процедуры по уходу за телом до конца месяца. Скидка 20%.</p>
+                        <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Блок блога -->
+                <div class="blog-section">
+                    <h2 class="section-title">Блог</h2>
+                    
+                    <div class="blog-post">
+                        <div class="blog-content">
+                            <h3>Как ухаживать за волосами летом</h3>
+                            <p>Полезные советы и рекомендации по сохранению здоровья ваших волос в жаркий сезон.</p>
+                            <a href="#" class="blog-link">Читать статью</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-post">
+                        <div class="blog-content">
+                            <h3>Тренды макияжа 2023</h3>
+                            <p>Самые актуальные тенденции в макияже этого года от ведущих визажистов.</p>
+                            <a href="#" class="blog-link">Читать статью</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+ <!-- Секция отзывов с горизонтальным скроллом -->
+            <section class="reviews-section">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                
+                <div class="reviews-container">
+                    <div class="reviews-scroll">
+                        <!-- Отзыв 1 -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Анна К.</span>
+                                <span class="review-date">15.06.2023</span>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">Прекрасный салон! Делала стрижку и окрашивание - результат превзошел все ожидания. Мастер настоящий профессионал, учла все пожелания.</p>
+                        </div>
+                        
+                        <!-- Отзыв 2 -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Марина С.</span>
+                                <span class="review-date">12.06.2023</span>
+                            </div>
+                            <div class="review-rating">★★★★☆</div>
+                            <p class="review-text">Очень понравился макияж для выпускного. Визажист подобрал идеальные оттенки, макияж держался весь вечер.</p>
+                        </div>
+                        
+                        <!-- Отзыв 3 -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Елена В.</span>
+                                <span class="review-date">10.06.2023</span>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">Лучший маникюр в моей жизни! Делала покрытие гель-лаком с дизайном - получилось просто волшебно.</p>
+                        </div>
+                        
+                        <!-- Отзыв 4 -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Ирина П.</span>
+                                <span class="review-date">08.06.2023</span>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">Регулярно делаю здесь эпиляцию. Процедура практически безболезненная, кожа после обработки просто идеальная.</p>
+                        </div>
+                        
+                        <!-- Отзыв 5 -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Ольга Д.</span>
+                                <span class="review-date">05.06.2023</span>
+                            </div>
+                            <div class="review-rating">★★★★★</div>
+                            <p class="review-text">Спасибо за чудесный уход за лицом! Кожа после процедуры сияет, все воспаления ушли.</p>
+                        </div>
+                        
+                        <!-- Отзыв 6 -->
+                        <div class="review-card">
+                            <div class="review-header">
+                                <span class="review-author">Светлана М.</span>
+                                <span class="review-date">02.06.2023</span>
+                            </div>
+                            <div class="review-rating">★★★★☆</div>
+                            <p class="review-text">Отличный салон, приятная атмосфера. Делала укладку - получилось именно то, что хотела.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="scroll-controls">
+                        <button class="scroll-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="scroll-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+            <!-- Секция "Где нас найти" -->
+            <section class="location-section">
+                <h2 class="section-title">Где нас найти</h2>
+                
+                <div class="location-container">
+                    <div class="location-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Адрес</h3>
+                                <p>г. Москва, ул. Прекрасная, д. 15, офис 42</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Часы работы</h3>
+                                <p>Пн-Пт: 9:00 - 21:00<br>Сб-Вс: 10:00 - 20:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Контакты</h3>
+                                <p>Телефон: +7 (123) 456-78-90<br>Email: info@princess-salon.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="location-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789035729!2d37.615310315931104!3d55.75202398055309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_RgNC10YHQvdC40LbQsNGA0LjRjywg0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1620000000000!5m2!1sru!2sru" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">You're My Princess</div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 You're My Princess. Все права защищены.
+        </div>
+    </footer>
+
+    <script>
+        // Простая анимация при загрузке
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.hero, .service-card, .news-item, .blog-post, .review-card');
+            
+            animatedElements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }, 150 * index);
+            });
+        });
+
+        // Скрипт для прокрутки отзывов
+        const reviewsScroll = document.querySelector('.reviews-scroll');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        
+        nextBtn.addEventListener('click', () => {
+            reviewsScroll.scrollBy({left: 320, behavior: 'smooth'});
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            reviewsScroll.scrollBy({left: -320, behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>

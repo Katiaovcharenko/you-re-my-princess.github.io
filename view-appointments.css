@@ -1,0 +1,288 @@
+ /* Основные стили */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5fff7;
+            color: #333;
+        }
+
+        /* Основное содержимое */
+        .main-container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Шапка */
+        header {
+            width: 100%;
+            background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1.logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin: 0 auto;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-left ul,
+        .header-right ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        .header-left li,
+        .header-right li {
+            margin: 0 15px;
+        }
+
+        .header-left a,
+        .header-right a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 8px 12px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .header-left a:hover,
+        .header-right a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Стили для страницы записей */
+        .appointments-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #2E7D32;
+            display: inline-block;
+            position: relative;
+            margin: 20px 0 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: linear-gradient(to right, rgba(46, 125, 50, 0.1), rgba(104, 159, 56, 0.1));
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            width: 100%;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(to right, #2E7D32, #4CAF50);
+            border-radius: 3px;
+        }
+
+        .appointment-list {
+            margin-top: 30px;
+        }
+
+        .appointment-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.179);
+            border-left: 4px solid #4CAF50;
+            transition: all 0.3s ease;
+        }
+
+        .appointment-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .appointment-card h3 {
+            color: #2E7D32;
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .appointment-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+            gap: 10px;
+        }
+
+        .detail-item {
+            margin-bottom: 10px;
+        }
+
+        .detail-item strong {
+            color: #2E7D32;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .status-confirmed {
+            display: inline-block;
+            background-color: rgba(76, 175, 80, 0.2);
+            color: #2E7D32;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .no-appointments {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.2em;
+        }
+
+footer {
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: white;
+    padding: 10px 0 5px; /* Уменьшено с 50px 0 30px */
+    margin-top: 60px; /* Уменьшено с 80px */
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Уменьшено с 5px */
+    background: linear-gradient(90deg, #2E7D32, #4CAF50, #81C784);
+}
+
+.footer-content {
+    max-width: 1000px; /* Уменьшено с 1200px */
+    margin: 0 auto;
+    padding: 0 20px; /* Уменьшено с 0 30px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; /* Уменьшено с 2em */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Уменьшено с 20px */
+}
+
+.social-link {
+    width: 38px; /* Уменьшено с 45px */
+    height: 38px; /* Уменьшено с 45px */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em; /* Уменьшено с 1.3em */
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: auto; /* Уменьшено с 40px */
+    margin-bottom: auto;
+    font-size: 0.8em; /* Уменьшено с 0.9em */
+    opacity: 0.8;
+}
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px 0;
+            }
+            
+            .header-left ul,
+            .header-right ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 10px;
+            }
+            
+            .header-left li,
+            .header-right li {
+                margin: 5px 10px;
+            }
+            
+            .section-title {
+                font-size: 1.8em;
+                padding: 0 20px 10px;
+            }
+            
+            .appointment-card {
+                padding: 20px;
+            }
+            
+            .appointment-details {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.5em;
+            }
+            
+            .appointment-card h3 {
+                font-size: 1.2em;
+            }
+            
+            .detail-item p {
+                font-size: 1em;
+            }
+        }

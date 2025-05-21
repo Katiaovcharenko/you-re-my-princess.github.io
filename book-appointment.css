@@ -1,0 +1,310 @@
+/* Основные стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5fff7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Основные контейнеры */
+.container {
+    max-width: 2000px;
+    margin: 50px 20%;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(65, 65, 65, 0.212);
+    flex: 1;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-left ul, .header-right ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-left li {
+    margin-right: 30px;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.header-left a, .header-right a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.header-left a:hover, .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Стили для формы регистрации */
+.container h1 {
+    font-family: 'Playfair Display', serif;
+    color: #2E7D32;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.container h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
+    border-radius: 3px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%; /* Добавляем ширину для группы */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2E7D32;
+}
+
+/* Добавьте эти стили к существующему CSS */
+
+/* Стили для выпадающего списка */
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232E7D32'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 15px;
+    padding-right: 35px; /* Добавляем место для стрелки */
+}
+
+/* Стили для опций */
+select.form-control option {
+    padding: 10px;
+    background-color: white;
+    color: #333;
+}
+
+select.form-control option:hover {
+    background-color: #f5fff7;
+}
+
+/* Для старых браузеров */
+select.form-control::-ms-expand {
+    display: none;
+}
+
+/* Убедитесь, что все поля формы имеют одинаковые отступы */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+    box-sizing: border-box; /* Важно для корректного расчета ширины */
+}
+
+
+.form-control:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+button[type="submit"] {
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.4);
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+}
+
+
+footer {
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: white;
+    padding: 10px 0 5px; /* Уменьшено с 50px 0 30px */
+    margin-top: 60px; /* Уменьшено с 80px */
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Уменьшено с 5px */
+    background: linear-gradient(90deg, #2E7D32, #4CAF50, #81C784);
+}
+
+.footer-content {
+    max-width: 1000px; /* Уменьшено с 1200px */
+    margin: 0 auto;
+    padding: 0 20px; /* Уменьшено с 0 30px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; /* Уменьшено с 2em */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Уменьшено с 20px */
+}
+
+.social-link {
+    width: 38px; /* Уменьшено с 45px */
+    height: 38px; /* Уменьшено с 45px */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em; /* Уменьшено с 1.3em */
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: auto; /* Уменьшено с 40px */
+    margin-bottom: auto;
+    font-size: 0.8em; /* Уменьшено с 0.9em */
+    opacity: 0.8;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .logo {
+        font-size: 1.6em;
+    }
+    
+    .header-left li {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        margin: 15px 0;
+        order: -1;
+    }
+    
+    .header-left ul, .header-right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-left li, .header-right li {
+        margin: 5px 0;
+    }
+    
+    .container {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4em;
+    }
+    
+    .container h1 {
+        font-size: 1.7em;
+    }
+    
+    .form-group input {
+        padding: 10px;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+}

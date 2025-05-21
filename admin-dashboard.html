@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Админ Панель</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="service.php">Услуги</a></li>
+                <li><a href="info.php">О нас</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="profile.php">Профиль</a></li>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Админ Панель</h1>
+        <div class="admin-sections">
+            <div class="section">
+                <h2>Управление Услугами</h2>
+                <button onclick="window.location.href='services-management.php'">Перейти</button>
+            </div>
+            <div class="section">
+                <h2>Управление Записями</h2>
+                <button onclick="window.location.href='appointments-management.php'">Перейти</button>
+            </div>
+            <div class="section">
+                <h2>Управление Акциями</h2>
+                <button onclick="window.location.href='promotions-management.php'">Перейти</button>
+            </div>
+            <div class="section">
+                <h2>Управление Пользователями</h2>
+                <button onclick="window.location.href='users-management.php'">Перейти</button>
+            </div>
+            <div class="section">
+                <h2>Статистика Проданных Услуг</h2>
+                <button onclick="window.location.href='sales-statistics.html'">Перейти</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 You're My Princess. Все права защищены.</p>
+    </footer>
+</body>
+</html>

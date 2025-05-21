@@ -1,0 +1,262 @@
+/* Основные стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5fff7;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header-left ul,
+.header-right ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.header-left li,
+.header-right li {
+    margin: 0 15px;
+}
+
+.header-left a,
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.header-left a:hover,
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Основное содержимое */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #2E7D32;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #2E7D32, #81C784);
+    border-radius: 2px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2E7D32;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #81C784;
+    box-shadow: 0 0 0 3px rgba(129, 199, 132, 0.3);
+    outline: none;
+}
+
+button {
+    background: linear-gradient(135deg, #2E7D32 0%, #4CAF50 100%);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+}
+
+
+
+footer {
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: white;
+    padding: 10px 0 5px; /* Уменьшено с 50px 0 30px */
+    margin-top: 60px; /* Уменьшено с 80px */
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Уменьшено с 5px */
+    background: linear-gradient(90deg, #2E7D32, #4CAF50, #81C784);
+}
+
+.footer-content {
+    max-width: 1000px; /* Уменьшено с 1200px */
+    margin: 0 auto;
+    padding: 0 20px; /* Уменьшено с 0 30px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; /* Уменьшено с 2em */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Уменьшено с 20px */
+}
+
+.social-link {
+    width: 38px; /* Уменьшено с 45px */
+    height: 38px; /* Уменьшено с 45px */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em; /* Уменьшено с 1.3em */
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: auto; /* Уменьшено с 40px */
+    margin-bottom: auto;
+    font-size: 0.8em; /* Уменьшено с 0.9em */
+    opacity: 0.8;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1.logo {
+        font-size: 1.5rem;
+    }
+    
+    .header-left ul,
+    .header-right ul {
+        padding: 0 10px;
+    }
+    
+    .header-left li,
+    .header-right li {
+        margin: 0 8px;
+    }
+    
+    .header-left a,
+    .header-right a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}
+
+/* Адаптивность для страницы оплаты */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}

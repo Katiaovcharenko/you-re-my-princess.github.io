@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Управление Записями</title>
+    <link rel="stylesheet" href="appointments-management.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="admin-dashboard.html">Админ Панель</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Управление Записями</h1>
+        <div class="appointment-management">
+            <h2>Добавить Новую Запись</h2>
+            <form>
+                <div class="form-group">
+                    <label for="appointment-name">Имя Клиента:</label>
+                    <input type="text" id="appointment-name" name="appointment-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-date">Дата Записи:</label>
+                    <input type="date" id="appointment-date" name="appointment-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-time">Время Записи:</label>
+                    <input type="time" id="appointment-time" name="appointment-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointment-service">Услуга:</label>
+                    <select id="appointment-service" name="appointment-service" required>
+                        <option value="service1">Услуга 1</option>
+                        <option value="service2">Услуга 2</option>
+                        <!-- Добавьте другие услуги по мере необходимости -->
+                    </select>
+                </div>
+                <button type="submit">Добавить Запись</button>
+            </form>
+        </div>
+        <div class="appointment-list">
+            <h2>Список Записей</h2>
+            <ul>
+                <li>
+                    <h3>Запись 1</h3>
+                    <p>Имя Клиента: Анна Иванова</p>
+                    <p>Дата: 01.12.2024</p>
+                    <p>Время: 10:00</p>
+                    <p>Услуга: Услуга 1</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <li>
+                    <h3>Запись 2</h3>
+                    <p>Имя Клиента: Иван Петров</p>
+                    <p>Дата: 02.12.2024</p>
+                    <p>Время: 14:00</p>
+                    <p>Услуга: Услуга 2</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <!-- Добавьте другие записи по мере необходимости -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 You're My Princess. Все права защищены.</p>
+    </footer>
+</body>
+</html>

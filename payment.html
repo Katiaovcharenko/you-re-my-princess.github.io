@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Оплата Записи</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="service.php">Услуги</a></li>
+                <li><a href="info.php">О нас</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="view-appointments.php">Мои записи</a></li>
+                <li><a href="profile.php">Профиль</a></li>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Оплата Записи</h1>
+        <form action="/submit-payment" method="post">
+            <div class="form-group">
+                <label for="card-name">Имя на Карте:</label>
+                <input type="text" id="card-name" name="card-name" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Номер Карты:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Срок Действия:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            </div>
+            <button type="submit">Оплатить</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">You're My Princess</div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 You're My Princess. Все права защищены.
+        </div>
+    </footer>
+</body>
+</html>

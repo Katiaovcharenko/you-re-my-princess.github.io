@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Управление Акциями</title>
+    <link rel="stylesheet" href="promotions-management.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="admin-dashboard.html">Админ Панель</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Управление Акциями</h1>
+        <div class="promotion-management">
+            <h2>Добавить Новую Акцию</h2>
+            <form>
+                <div class="form-group">
+                    <label for="promotion-title">Название Акции:</label>
+                    <input type="text" id="promotion-title" name="promotion-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="promotion-description">Описание Акции:</label>
+                    <textarea id="promotion-description" name="promotion-description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="promotion-discount">Скидка (%):</label>
+                    <input type="number" id="promotion-discount" name="promotion-discount" required>
+                </div>
+                <button type="submit">Добавить Акцию</button>
+            </form>
+        </div>
+        <div class="promotion-list">
+            <h2>Список Акций</h2>
+            <ul>
+                <li>
+                    <h3>Акция 1</h3>
+                    <p>Семейный выходной!</p>
+                    <p>25% скидки для всей семьи по выходным!</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <li>
+                    <h3>Акция 2</h3>
+                    <p>Приведи подругу!</p>
+                    <p>Скидка 10% на следующую услугу для вас и вашей подруги!</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <li>
+                    <h3>Акция 3</h3>
+                    <p>День рождения принцессы!</p>
+                    <p>20% скидки в день рождения и 7 дней после!</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 You're My Princess. Все права защищены.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,435 @@
+ /* Основные стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5fff7;
+    color: #333;
+}
+
+/* Основное содержимое */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Шапка */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header-left ul,
+.header-right ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.header-left li,
+.header-right li {
+    margin: 0 15px;
+}
+
+.header-left a,
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.header-left a:hover,
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Секция "О нас" */
+.about-section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2E7D32;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #2E7D32, #81C784);
+    border-radius: 2px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-intro {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.133);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #2E7D32, #81C784);
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.227);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 3px solid #81C784;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    color: #2E7D32;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature-card h3 i {
+    color: #FFD700;
+    font-size: 1.8rem;
+}
+
+/* Секция "Наш персонал" - Улучшенный дизайн */
+.team-section {
+    margin-top: 80px;
+    position: relative;
+}
+
+.team-section::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(46, 125, 50, 0.3), transparent);
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.member-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.member-social {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    z-index: 2;
+}
+
+.member-social a {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+    background: #FFD700;
+    color: #2E7D32;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.member-info h3 {
+    color: #2E7D32;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.member-info .position {
+    color: #81C784;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.member-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.member-skills span {
+    background: rgba(129, 199, 132, 0.2);
+    color: #2E7D32;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.member-info .description {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Подвал */
+footer {
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: white;
+    padding: 10px 0 5px; /* Уменьшено с 50px 0 30px */
+    margin-top: 60px; /* Уменьшено с 80px */
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Уменьшено с 5px */
+    background: linear-gradient(90deg, #2E7D32, #4CAF50, #81C784);
+}
+
+.footer-content {
+    max-width: 1000px; /* Уменьшено с 1200px */
+    margin: 0 auto;
+    padding: 0 20px; /* Уменьшено с 0 30px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; /* Уменьшено с 2em */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Уменьшено с 20px */
+}
+
+.social-link {
+    width: 38px; /* Уменьшено с 45px */
+    height: 38px; /* Уменьшено с 45px */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em; /* Уменьшено с 1.3em */
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: auto; /* Уменьшено с 40px */
+    margin-bottom: auto;
+    font-size: 0.8em; /* Уменьшено с 0.9em */
+    opacity: 0.8;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-intro {
+        padding: 30px 20px;
+    }
+    
+    .team-members {
+        grid-template-columns: 1fr;
+    }
+    
+    .member-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    .member-info {
+        padding: 20px;
+    }
+    
+    .btn-book {
+        padding: 10px 20px;
+    }
+}

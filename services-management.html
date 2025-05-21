@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Управление Услугами</title>
+    <link rel="stylesheet" href="services-management.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="admin-dashboard.html">Админ Панель</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Управление Услугами</h1>
+        <div class="service-management">
+            <h2>Добавить Новую Услугу</h2>
+            <form>
+                <div class="form-group">
+                    <label for="service-name">Название Услуги:</label>
+                    <input type="text" id="service-name" name="service-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="service-description">Описание Услуги:</label>
+                    <textarea id="service-description" name="service-description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="service-price">Цена:</label>
+                    <input type="number" id="service-price" name="service-price" required>
+                </div>
+                <button type="submit">Добавить Услугу</button>
+            </form>
+        </div>
+        <div class="service-list">
+            <h2>Список Услуг</h2>
+            <ul>
+                <li>
+                    <h3>Услуга 1</h3>
+                    <p>Описание услуги 1</p>
+                    <p>Цена: 1000 руб.</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <li>
+                    <h3>Услуга 2</h3>
+                    <p>Описание услуги 2</p>
+                    <p>Цена: 1500 руб.</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <!-- Добавьте другие услуги по мере необходимости -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 You're My Princess. Все права защищены.</p>
+    </footer>
+</body>
+</html>

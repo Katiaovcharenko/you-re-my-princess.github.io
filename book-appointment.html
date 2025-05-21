@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Запись на Услугу</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="service.php">Услуги</a></li>
+                <li><a href="info.php">О нас</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="view-appointments.php">Мои записи</a></li>
+                <li><a href="profile.php">Профиль</a></li>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Запись на Услугу</h1>
+        <form action="book_appointments.php" method="post">
+            <div class="form-group">
+                <label for="service">Выберите Услугу:</label>
+                <select id="service" name="service" class="form-control" required>
+                    <option value="1">Мужская стрижка</option>
+                    <option value="2">Женская стрижка (классическая)</option>
+                    <option value="3">Женская стрижка (креативная)</option>
+                    <option value="4">Детская стрижка</option>
+                    <option value="5">Укладка</option>
+                    <option value="6">Полное окрашивание</option>
+                    <option value="7">Мелирование</option>
+                    <option value="8">Колорирование</option>
+                    <option value="9">Тонирование</option>
+                    <option value="10">Лечебная маска</option>
+                    <option value="11">Ламинирование</option>
+                    <option value="12">Кератиновое выпрямление</option>
+                    <option value="13">Ботокс для волос</option>
+                    <option value="14">Маникюр с дизайном</option>
+                    <option value="15">Педикюр с дизайном</option>
+                    <option value="16">Вечерний макияж</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Выберите Дату:</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Выберите Время:</label>
+                <input type="time" id="time" name="time" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" required>
+            </div>
+            <button type="submit">Перейти к оплате</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">You're My Princess</div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 You're My Princess. Все права защищены.
+        </div>
+    </footer>
+</body>
+</html>

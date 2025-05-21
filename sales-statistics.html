@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Статистика Проданных Услуг</title>
+    <link rel="stylesheet" href="sales-statistics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="admin-dashboard.html">Админ Панель</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Статистика Проданных Услуг</h1>
+        <div class="chart-container">
+            <canvas id="salesChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="servicesChart"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 You're My Princess. Все права защищены.</p>
+    </footer>
+    <script>
+        const salesData = {
+            labels: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+            datasets: [{
+                label: 'Продажи по месяцам',
+                data: [1000, 1500, 1200, 1700, 2000, 2200, 1800, 2100, 2300, 2400, 2500, 2700],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        const servicesData = {
+            labels: ['Услуга 1', 'Услуга 2', 'Услуга 3', 'Услуга 4', 'Услуга 5'],
+            datasets: [{
+                label: 'Проданные Услуги',
+                data: [300, 400, 250, 500, 350],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        const configSalesChart = {
+            type: 'line',
+            data: salesData,
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        const configServicesChart = {
+            type: 'bar',
+            data: servicesData,
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        window.onload = function() {
+            const ctxSalesChart = document.getElementById('salesChart').getContext('2d');
+            const salesChart = new Chart(ctxSalesChart, configSalesChart);
+
+            const ctxServicesChart = document.getElementById('servicesChart').getContext('2d');
+            const servicesChart = new Chart(ctxServicesChart, configServicesChart);
+        };
+    </script>
+</body>
+</html>

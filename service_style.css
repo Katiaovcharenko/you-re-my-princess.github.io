@@ -1,0 +1,612 @@
+/* Основные стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5fff7;
+    color: #333;
+}
+
+/* Основные контейнеры */
+.main-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Шапка */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header-left ul,
+.header-right ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.header-left li,
+.header-right li {
+    margin: 0 15px;
+}
+
+.header-left a,
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.header-left a:hover,
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Стили для заголовков */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2E7D32;
+    display: inline-block;
+    padding: 0 30px 12px;
+    position: relative;
+    margin: 20px 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, rgba(46, 125, 50, 0.1), rgba(104, 159, 56, 0.1));
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
+    border-radius: 3px;
+}
+
+.section-title-gallery {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #2E7D32;
+    display: inline-block;
+    padding: 0 30px 12px;
+    position: relative;
+    margin: 20px 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, rgba(46, 125, 50, 0.1), rgba(104, 159, 56, 0.1));
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title-gallery:after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
+    border-radius: 3px;
+}
+
+.category-title {
+    font-family: 'Playfair Display', serif;
+    color: #2E7D32;
+    font-size: 1.5em;
+    margin: 15px 0;
+    padding: 8px 15px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: rgba(233, 245, 233, 0.7);
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.category-title:after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #4CAF50, transparent);
+}
+
+.promotion h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2E7D32;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.promotion h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #4CAF50;
+}
+
+/* Категории услуг - обновленный контейнер */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.service-category {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 25px;
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 100, 0, 0.08);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.service-category:hover {
+    transform: translateY(-3px);
+}
+
+.category-title {
+    font-family: 'Playfair Display', serif;
+    color: #2E7D32;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0f0e0;
+    text-align: center;
+}
+
+/* Контейнеры таблиц */
+.tables-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.compact-table {
+    flex: 0 0 calc(33.333% - 15px);
+    min-width: 250px;
+    background: #eeffeeb5;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 6, 0, 0.19);
+    transition: all 0.3s ease;
+}
+
+.compact-table:hover {
+    box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+}
+
+.compact-table h4 {
+    color: #2E7D32;
+    margin: 0 0 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 10px;
+    background-color: rgba(233, 245, 233, 0.5);
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.compact-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.compact-table td {
+    padding: 8px 5px;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.compact-table tr:last-child td {
+    border-bottom: none;
+}
+
+.compact-table td:first-child {
+    text-align: left;
+    color: #555;
+    padding-right: 10px;
+}
+
+.compact-table td:last-child {
+    text-align: right;
+    font-weight: 600;
+    color: #2E7D32;
+    white-space: nowrap;
+}
+
+/* Кнопки */
+.button-container {
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+.main-button button {
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-button button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.4);
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+}
+
+/* Галерея с автоскроллом */
+#gallery {
+    position: relative;
+    padding: 2rem 5%;
+    max-width: 1075px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 250px;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.582);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Стили для акций */
+#promotions {
+    padding: 2rem 5%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.promotions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+
+.promotion {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.promotion:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
+}
+
+.promotion h3 {
+    font-family: 'Playfair Display', serif;
+    color: #2E7D32;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.promotion p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.promotion.family-weekend {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+}
+
+.promotion#birthdayDiscount {
+    background: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%);
+}
+
+/* Подвал */
+footer {
+    background: linear-gradient(135deg, #1e3c1e 0%, #4CAF50 100%);
+    color: white;
+    padding: 10px 0 5px; /* Уменьшено с 50px 0 30px */
+    margin-top: 60px; /* Уменьшено с 80px */
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Уменьшено с 5px */
+    background: linear-gradient(90deg, #2E7D32, #4CAF50, #81C784);
+}
+
+.footer-content {
+    max-width: 1000px; /* Уменьшено с 1200px */
+    margin: 0 auto;
+    padding: 0 20px; /* Уменьшено с 0 30px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; /* Уменьшено с 2em */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px; /* Уменьшено с 20px */
+}
+
+.social-link {
+    width: 38px; /* Уменьшено с 45px */
+    height: 38px; /* Уменьшено с 45px */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1em; /* Уменьшено с 1.3em */
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: auto; /* Уменьшено с 40px */
+    margin-bottom: auto;
+    font-size: 0.8em; /* Уменьшено с 0.9em */
+    opacity: 0.8;
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+    .main-container {
+        max-width: 800px;
+    }
+    .service-category {
+        flex: 0 0 calc(50% - 15px);
+    }
+    .compact-table {
+        flex: 0 0 calc(50% - 15px);
+    }
+    .promotions-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 12px 0;
+    }
+    
+    .header-left ul, .header-right ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
+    }
+    
+    .header-left li, .header-right li {
+        margin: 4px 0;
+    }
+    
+    .section-title, .section-title-gallery {
+        font-size: 1.7em;
+    }
+    
+    .service-category {
+        flex: 0 0 100%;
+        padding: 15px;
+    }
+    
+    .tables-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .compact-table {
+        flex: 0 0 100%;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .promotions-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title, .section-title-gallery {
+        font-size: 1.5em;
+        padding: 0 15px 8px;
+    }
+    
+    .category-title {
+        font-size: 1.2em;
+    }
+    
+    .compact-table h4 {
+        font-size: 1em;
+    }
+    
+    .compact-table td {
+        font-size: 0.85em;
+        padding: 6px 3px;
+    }
+    
+    .main-button button {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+    
+    .promotion {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .compact-table {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    
+    .compact-table h4 {
+        font-size: 1em;
+        padding: 8px;
+    }
+    
+    .compact-table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .compact-table {
+        flex: 0 0 100%;
+    }
+    
+    .gallery-item {
+        width: 250px;
+    }
+    
+    .scroll-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title, .section-title-gallery {
+        font-size: 1.7em;
+    }
+    
+    .gallery-item {
+        width: 220px;
+        height: 160px;
+    }
+    
+    .promotions-container {
+        grid-template-columns: 1fr;
+    }
+}

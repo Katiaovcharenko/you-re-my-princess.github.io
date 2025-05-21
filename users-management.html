@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're my princess - Управление Пользователями</title>
+    <link rel="stylesheet" href="users-management.css">
+</head>
+<body>
+    <header>
+        <nav class="header-left">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="admin-dashboard.html">Админ Панель</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo">You're My Princess</h1>
+        <nav class="header-right">
+            <ul>
+                <li><a href="login.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Управление Пользователями</h1>
+        <div class="user-management">
+            <h2>Добавить Нового Пользователя</h2>
+            <form>
+                <div class="form-group">
+                    <label for="user-name">Имя:</label>
+                    <input type="text" id="user-name" name="user-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Электронная почта:</label>
+                    <input type="email" id="user-email" name="user-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-phone">Телефон:</label>
+                    <input type="tel" id="user-phone" name="user-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-role">Роль:</label>
+                    <select id="user-role" name="user-role" required>
+                        <option value="admin">Администратор</option>
+                        <option value="user">Пользователь</option>
+                        <!-- Добавьте другие роли по мере необходимости -->
+                    </select>
+                </div>
+                <button type="submit">Добавить Пользователя</button>
+            </form>
+        </div>
+        <div class="user-list">
+            <h2>Список Пользователей</h2>
+            <ul>
+                <li>
+                    <h3>Ксения Павлова</h3>
+                    <p>Электронная почта: ksenia@example.com</p>
+                    <p>Телефон: +7 123 456 7890</p>
+                    <p>Роль: Пользователь</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <li>
+                    <h3>Екатерина Овчаренко</h3>
+                    <p>Электронная почта: katena@example.com</p>
+                    <p>Телефон: +7 987 654 3210</p>
+                    <p>Роль: Администратор</p>
+                    <button>Редактировать</button>
+                    <button>Удалить</button>
+                </li>
+                <!-- Добавьте других пользователей по мере необходимости -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 You're My Princess. Все права защищены.</p>
+    </footer>
+</body>
+</html>
