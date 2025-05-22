@@ -12,7 +12,7 @@ jobs:
       - name: Set up PostgreSQL
         uses: harmon758/postgresql-action@v1.0.0
         with:
-          postgresql_version: '12'
+          postgresql_version: '17.5'
           dbname: ${{ secrets.DB_NAME }}
           username: ${{ secrets.DB_USERNAME }}
           password: ${{ secrets.DB_PASSWORD }}
