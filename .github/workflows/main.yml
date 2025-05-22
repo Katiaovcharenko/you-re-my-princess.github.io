@@ -1,14 +1,18 @@
-name: Setup PostgreSQL
+name: PostgreSQL Setup
 
-on: [workflow_dispatch]  # Запуск вручную через UI
+on:
+  workflow_dispatch:  # Разрешает ручной запуск
+  push:              # Автозапуск при push
+    branches: [ main ]
 
 jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: harmon758/postgresql-action@v1.0.0
+      - name: Set up PostgreSQL
+        uses: harmon758/postgresql-action@v1.0.0
         with:
-          postgresql_version: '17'
+          postgresql_version: '12'
           dbname: ${{ secrets.DB_NAME }}
           username: ${{ secrets.DB_USERNAME }}
           password: ${{ secrets.DB_PASSWORD }}
